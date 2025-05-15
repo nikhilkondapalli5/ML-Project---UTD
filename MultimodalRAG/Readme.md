@@ -1,4 +1,4 @@
-Run python rag_generator.py to see the result of comparison between ReAct, CoT, ToT files.
+Run python rag_generator.py to see the result of comparison between ReAct, CoT, ToT data.
 
 Please ensure to add the following API keys in a .env file in the same directory as the corresponding files to run the program successfully.
 
