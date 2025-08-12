@@ -39,7 +39,7 @@ A Python‐based autonomous data‐analysis agent that uses OpenAI function‐ca
    git clone https://github.com/your-org/tracing-agent.git
    cd tracing-agent
 
-
+```shell
 python3 -m venv venv
 source venv/bin/activate
 
@@ -54,7 +54,7 @@ export PHOENIX_COLLECTOR_ENDPOINT="https://app.phoenix.arize.com"
 SALARY_DATA_FILE_PATH = "/path/to/Baltimore_City_Employee_Salaries_FY2013.csv"
 
 python Baltimore_with_local_memory.py
-
+```
 
 You can test the memory part with below: 
 1st Query: "Determine which job titles have the highest average Gross value in the given dataset and provide top 10 ranks overview and plot them as horizontal bar graph using seaborn." 
