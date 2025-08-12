@@ -39,23 +39,25 @@ A Python‐based autonomous data‐analysis agent that uses OpenAI function‐ca
    git clone https://github.com/your-org/tracing-agent.git
    cd tracing-agent
 
-```shell
-python3 -m venv venv
-source venv/bin/activate
+2. **Run the program in a virtual environment**
+  ```shell
+  python3 -m venv venv
+  source venv/bin/activate
+  
+  pip install --upgrade pip
+  pip install openai pandas duckdb pydantic phoenix openinference opentelemetry-api
+  
+  export OPENAI_API_KEY="your_openai_api_key"
+  export OTEL_EXPORTER_OTLP_HEADERS="your_otlp_headers"
+  export PHOENIX_CLIENT_HEADERS="your_phoenix_client_headers"
+  export PHOENIX_COLLECTOR_ENDPOINT="https://app.phoenix.arize.com"
+  
+  SALARY_DATA_FILE_PATH = "/path/to/Baltimore_City_Employee_Salaries_FY2013.csv"
+  
+  python Baltimore_with_local_memory.py
+  ```
 
-pip install --upgrade pip
-pip install openai pandas duckdb pydantic phoenix openinference opentelemetry-api
-
-export OPENAI_API_KEY="your_openai_api_key"
-export OTEL_EXPORTER_OTLP_HEADERS="your_otlp_headers"
-export PHOENIX_CLIENT_HEADERS="your_phoenix_client_headers"
-export PHOENIX_COLLECTOR_ENDPOINT="https://app.phoenix.arize.com"
-
-SALARY_DATA_FILE_PATH = "/path/to/Baltimore_City_Employee_Salaries_FY2013.csv"
-
-python Baltimore_with_local_memory.py
-```
-
+## Testing with prompt
 You can test the memory part with below: 
 
 1st Query: "Determine which job titles have the highest average Gross value in the given dataset and provide top 10 ranks overview and plot them as horizontal bar graph using seaborn." 
