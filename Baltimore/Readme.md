@@ -57,5 +57,7 @@ python Baltimore_with_local_memory.py
 ```
 
 You can test the memory part with below: 
+
 1st Query: "Determine which job titles have the highest average Gross value in the given dataset and provide top 10 ranks overview and plot them as horizontal bar graph using seaborn." 
+
 2nd Query: "Which Job title has second highest average gross?" //This query retrieves data from local memory instead of tool calling again
