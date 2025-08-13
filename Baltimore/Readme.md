@@ -36,8 +36,8 @@ A Python‐based autonomous data‐analysis agent that uses OpenAI function‐ca
 
 1. **Clone this repo**  
    ```bash
-   git clone https://github.com/your-org/tracing-agent.git
-   cd tracing-agent
+   git clone https://github.com/nikhilkondapalli5/ML-Project---UTD.git
+   cd Baltimore
 
 2. **Run the program in a virtual environment**
   ```shell
