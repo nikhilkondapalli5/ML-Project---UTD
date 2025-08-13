@@ -115,6 +115,7 @@ Here are a few examples of questions you can ask the agent:
 You can test the memory part as below: 
 
 1st Query: "Determine which job titles have the highest average Gross value in the given dataset and provide top 10 ranks overview and plot them as horizontal bar graph using seaborn." 
+
 2nd Query: "Which Job title has second highest average gross?" //This query retrieves data from local memory instead of tool calling again
 
 
